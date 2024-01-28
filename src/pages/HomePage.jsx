@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react';
 import PokemonList from '../components/PokemonList';
-import FilterBard from '../components/FilterBard';
+import FilterBar from '../components/FilterBard';
 import { PokemonContext } from '../context/PokemonContext';
+import Container from 'react-bootstrap/Container';
+
 
 const HomePage = () => {
   const { onClickLoadMore, active, setActive } = useContext(PokemonContext);
@@ -9,6 +11,8 @@ const HomePage = () => {
 
   return (
     <>
+      <Container className='fluid d-flex justify-content-center'>
+
       <div className='container-filter container'>
         <div className='icon-filter' onClick={() => setActive(!active)}>
           <svg
@@ -28,8 +32,10 @@ const HomePage = () => {
           <span>Filtrar</span>
         </div>
       </div>
+      </Container>
+      
       <PokemonList />
-      <FilterBard />
+      <FilterBar />
       <div className="container-btn-load-more container">
         <button className='btn-load-more' onClick={onClickLoadMore}>
           Cargar más
