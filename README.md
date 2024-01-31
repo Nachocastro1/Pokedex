@@ -4,6 +4,9 @@
 
 ![image](https://github.com/Nachocastro1/Pokedex/assets/126210288/c605132b-9759-44da-9ef4-64f1b22b3f92)
 
+![image](https://github.com/Nachocastro1/Pokedex/assets/126210288/e2554bc8-fcf1-4273-a100-3c9447dadab7)
+
+
 
 
 
